@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   text-decoration: none;
+   border: none;
+   outline: none;
+   scroll-behavior: smooth;
+   text-transform: capitalize;
+   font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #080b16;
+    color: #f7f7f7; 
+}
+
+
+.container_main{
+    background-color: #080b16;
+    min-height: 100vh;
+    max-width: 1060px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 2rem 0 3rem;
+}
+
+.heading{
+    text-align: center;
+   color: #f7f7f7;
+   font-size: 1.8rem;
+   font-weight: 900;
+   margin-bottom: 2rem;
+}
+
+.desc{
+    text-align: center;
+    color: gray; 
+    font-size: 1rem;  
+    margin-bottom: 5px;
+}
+
+
+.invest-plan {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(337px, 1fr));
+    gap: 1.5rem;
+}
+
+
+.invest-box{
+    background-color: #131a35;
+    border-radius: 1.2rem;
+}
+
+.top-box{
+    padding: 30px;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #0d1632;
+}
+
+.p-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.bronze{
+color:  #CD7F32;
+}
+
+.silver{
+ color: #B1B1B1;   
+}
+
+.gold{
+ color: #FFD700;   
+}
+
+.price{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.price span{
+    font-size: 1.075rem;
+    font-weight: 500;
+    color: #B1B1B1;
+}
+
+.btn-a{
+    color: #f7f7f7;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.brnz{
+   background-color: #CD7F32; 
+}
+
+.slvr{
+    background-color: #B1B1B1;
+}
+
+.gld{
+    background-color: #FFD700;
+}
+
+.brnz:hover{
+    background-color: #77410b;
+}
+
+.slvr:hover{
+    background-color: #767272;
+}
+
+
+.gld:hover{
+    background-color: #aa951c;
+}
+.btn-a:hover{
+
+}
+
+.top-box p{
+    font-size: 0.875rem;
+    color: rgb(38, 143, 208);
+    text-align: center;
+}
+
+
+
+
+.btm-box{
+    padding: 30px;
+}
+
+.p-box{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px 0;
+    border-bottom:solid 1px rgb(55, 62, 73);
+}
+
+.p-box i{
+    font-size: 20px;
+    color: rgb(10, 85, 114);
+}
+
+.p-box p{
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+/*** MY PAYMENT SECTION BEGINS HERE   */
+
+.container_pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.container_pay form{
+    width: 700px;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 5px 5px 30px rgb(39, 141, 197);
+}
+
+.container_pay form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_pay form .row .col{
+    flex: 1 1 250px;
+}
+
+.col .title{
+    font-size: 20px;
+    color: #1598c4;
+    padding-bottom: 5px;
+}
+
+.col .inputBox{
+    margin: 15px 0;
+}
+
+.col .inputBox label{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.col .inputBox input, .col .inputBox select{
+    width: 100%;
+    border: 1px solid #5d5b5b;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.col .inputBox input:focus, .col .inputBox select:focus{
+    border: 1px solid gray;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input, select{
+    background-color:transparent ;
+    color: #767272;
+}
+
+.col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.col .flex .inputBox{
+    flex: 1 1;
+    margin-top: 5px;
+}
+
+.col .inputBox img{
+    width: 100%;
+    height: 34px;
+    margin-top: 5px;
+    /* filter: drop-shadow(0 0 1px #1598c4); */
+}
+
+.container_pay form .sub-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #1598c4;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.container_pay form .sub-btn:hover{
+    background: #0f7ba0;
+}
+
+select{
+    color: #767272;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+MOBLE RESPONSIVENESS */
+
+@media(max-width:1050px){
+    .invest-plan{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media(max-width:400px){
+    .invest-plan{
+       grid-template-columns: 1fr;
+    }
+}
